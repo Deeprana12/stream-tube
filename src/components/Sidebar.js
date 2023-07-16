@@ -4,8 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 const Sidebar = () => {
 
-  const location = useLocation();
-  console.log(location)
+  const location = useLocation();  
   const isMenuOpen = useSelector((store)=>store.app.isMenuOpen)
 
   if(!isMenuOpen)

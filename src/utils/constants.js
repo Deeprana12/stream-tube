@@ -1,14 +1,12 @@
-const GOOGLE_API_KEY = "AIzaSyDfUBHhgRD3e2Xm-ZPtQBW7JVC478DroaU"
-
-export const YOUTUBE_VIDEOS_API =  `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=100&regionCode=IN&key=${GOOGLE_API_KEY}`;
+export const YOUTUBE_VIDEOS_API =  `https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&chart=mostPopular&maxResults=100&regionCode=IN&key=${process.env.REACT_APP_GOOGLE_API_KEY}`;
 
 export const YOUTUBE_SEARCH_API = "https://corsproxy.io/?http://suggestqueries.google.com/complete/search?client=chrome&ds=yt&q="
 
-export const YOUTUBE_VIDEO_METADAT_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=" + GOOGLE_API_KEY + "&id="
+export const YOUTUBE_VIDEO_METADAT_API = "https://youtube.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&key=" + process.env.REACT_APP_GOOGLE_API_KEY + "&id="
 
-export const YOUTUBE_VIDEO_COMMENT = "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=" + GOOGLE_API_KEY + "&videoId="
+export const YOUTUBE_VIDEO_COMMENT = "https://youtube.googleapis.com/youtube/v3/commentThreads?part=snippet%2Creplies&key=" + process.env.REACT_APP_GOOGLE_API_KEY + "&videoId="
 
-export const YOUTUBE_SEARCH_QUERY = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&key=" + GOOGLE_API_KEY + "&q="
+export const YOUTUBE_SEARCH_QUERY = "https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&key=" + process.env.REACT_APP_GOOGLE_API_KEY + "&q="
 
 var nameList = [
   "John Doe",
